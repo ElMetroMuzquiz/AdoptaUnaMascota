@@ -85,18 +85,49 @@ body {
 }
 
 /* Tarjetas de mascotas */
+/* ==========================================
+   TAREA 4: Tarjetas de Mascotas Estilizadas
+   ========================================== */
 .tarjetas {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tarjeta {
-  border: 1px solid #ccc;
+  border: 1px solid #e0e0e0;
   background: white;
   padding: 1rem;
-  width: 200px;
+  width: 250px;
   text-align: center;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra inicial */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover: levanta la tarjeta */
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+
+.tarjeta h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 0.9rem;
+  color: #555;
 }
 
 /* Formulario */
