@@ -10,29 +10,72 @@ body {
   color: #333;
   background-color: #fafafa;
   line-height: 1.6;
+  padding-top: 75px; /* Compensa la altura del encabezado fijo */
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en el menú */
 }
 
-/* Encabezado */
+/* Encabezado fijo */
 .encabezado {
-  background-color: #4caf50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2e7d32; /* Verde un poco más elegante y profesional */
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Diseño mejorado del Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Estilos del Menú de Navegación */
+.menu {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .menu a {
-  color: white;
+  color: #e8f5e9;
   text-decoration: none;
-  margin-left: 1rem;
+  font-weight: 500;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Color al pasar el mouse (Hover) */
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* Subrayado en la sección actual / enlace activo */
+.menu a.active,
+.menu a:hover {
+  border-bottom: 2px solid #ffffff;
 }
 
 /* Hero */
 .hero {
   background-color: #e8f5e9;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .boton {
@@ -41,11 +84,17 @@ body {
   border: none;
   padding: 0.6rem 1.2rem;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #1b5e20;
 }
 
 /* Secciones */
 .seccion {
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -68,18 +117,28 @@ body {
   padding: 1rem;
   width: 200px;
   text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* Formulario */
 .formulario label {
   display: block;
   margin-top: 0.5rem;
+  font-weight: bold;
 }
 
 .formulario input,
 .formulario textarea {
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.2rem;
+}
+
+.formulario button {
+  margin-top: 1rem;
 }
 
 /* Pie de página */
@@ -87,5 +146,5 @@ body {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }

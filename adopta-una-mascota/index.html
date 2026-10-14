@@ -11,11 +11,11 @@
   <header class="encabezado">
     <h1 class="logo">🐾 Adopta una Mascota</h1>
     <nav class="menu">
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#adopta">Adóptame</a>
-      <a href="#visita">Visítanos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#adopta" class="nav-link">Adóptame</a>
+      <a href="#visita" class="nav-link">Visítanos</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
     </nav>
   </header>
 
@@ -87,5 +87,29 @@
     <p>© 2026 Adopta una Mascota — Proyecto escolar</p>
     <p>Facebook | Instagram | X</p>
   </footer>
+
+  <!-- Script para actualizar el enlace activo según el scroll -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
