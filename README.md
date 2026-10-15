@@ -27,4 +27,7 @@ Durante el desarrollo del proyecto en equipo se utilizaron los siguientes comand
 * git push origin <rama>[span_28](start_span)[span_28](end_span)
 * git pull[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span)
 * git merge <rama>[span_31](start_span)[span_31](end_span)
-*
+
+## Conclusión del Equipo
+*¿Qué fue lo más difícil del trabajo con ramas?*
+Lo más difícil fue coordinarnos al principio para entender cómo evitar conflictos al modificar distintos archivos o secciones a la vez, así como aprender a integrar correctamente cada rama (merge) en la rama principal (main). Sin embargo, practicarlo nos ayudó a entender el flujo de trabajo colaborativo en Git.
