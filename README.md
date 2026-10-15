@@ -4,11 +4,12 @@
 Página web sencilla desarrollada en HTML y CSS para un refugio de animales, diseñada para promover la adopción responsable de perros, gatos y otras mascotas[span_9](start_span)[span_9](end_span). El sitio cuenta con un diseño responsivo para adaptarse correctamente a dispositivos móviles[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span).
 
 ## Integrantes del Equipo
-* Integrante 1 (Líder)
-* Integrante 2
-* Integrante 3
-* Integrante 4
-* Integrante 5
+* García Ledesma Ronaldo (Líder)
+* Neri Barcenas Greco Gabriel
+* Arcos Sanchez Luis Angel
+* Hernandez Gonzalez Manuel Alexis
+* Hernandez Gomez Mariel Guadalupe
+* Zea Ponce Bella Evelin
 
 ## Secciones de la Página
 1. *Encabezado y Menú:* Navegación fija con efectos visuales y enlaces a las secciones[span_12](start_span)[span_12](end_span)[span_13](start_span)[span_13](end_span).
