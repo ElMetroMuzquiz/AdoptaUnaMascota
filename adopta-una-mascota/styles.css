@@ -273,3 +273,55 @@ body {
   color: #2e7d32;
   font-size: 1rem;
 }
+/* ==========================================
+   TAREA 5: Sección Visítanos Mejorada
+   ========================================== */
+.visita-seccion {
+  background-color: #f1f8e9;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #c8e6c9;
+}
+
+.visita-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visita-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.visita-info p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.boton-mapa {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  background-color: #1b5e20;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+}
+
+.boton-mapa:hover {
+  background-color: #2e7d32;
+}
+
+.visita-mapa {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
